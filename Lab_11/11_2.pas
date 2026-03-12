@@ -1,0 +1,9 @@
+PROGRAM LastChar(INPUT, OUTPUT);
+VAR
+  Ch: CHAR;
+BEGIN
+  WHILE NOT EOLN
+  DO
+    READ(Ch);
+  WRITELN(Ch)
+END.

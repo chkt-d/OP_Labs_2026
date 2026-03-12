@@ -1,0 +1,19 @@
+PROGRAM AS(INPUT, OUTPUT);
+VAR
+  V1, V2: CHAR;
+BEGIN
+  IF NOT EOLN
+  THEN
+    READ(V1);
+  IF NOT EOLN
+  THEN
+    READ(V2)
+  IF NOT EOLN
+  THEN
+    IF V1 < V2
+    THEN
+      V1 := V2
+    ELSE
+      V2 := V1;
+  WRITELN('V1: ', V1, ' ', 'V2: ', V2)
+END.

@@ -1,0 +1,22 @@
+PROGRAM Split(INPUT, OUTPUT);
+
+PROCEDURE CopyOut(VAR F1: TEXT);
+VAR
+  Ch: CHAR;
+BEGIN
+  WHILE NOT EOLN(F1)
+  DO
+    BEGIN
+      READ(F1, Ch);
+      WRITE(OUTPUT, Ch)
+    END;
+  WRITELN(OUTPUT)
+END;
+
+BEGIN
+  {Разделяет INPUT в Odds и Evens}
+  CopyOut(INPUT);
+  WRITELN
+END.
+
+
